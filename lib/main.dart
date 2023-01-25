@@ -53,7 +53,7 @@ class _SmartBallHomeState extends State<SmartBallHome> {
         title: Center(
           child: Text(
             'Ask Me Anything'.toUpperCase(),
-            style: const TextStyle(fontSize: 16.0,),
+            style: const TextStyle(fontSize: 18.0,),
           ),
         ),
       ),
@@ -65,6 +65,9 @@ class _SmartBallHomeState extends State<SmartBallHome> {
                     answers();
                   });
                 },
+                style: ButtonStyle(
+                  overlayColor: MaterialStateProperty.all(Colors.transparent),
+                ),
                 child: Image.asset('images/ball$imageNumber.png'))),
       ),
     );
